@@ -2,14 +2,48 @@
 <html>
 <head>
   <title>Stories</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.google.com/?selection.family=Oswald:300,400,500,600">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+     <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+     <link  href="https://fonts.google.com/?selection.family=Roboto:100,300,400" rel="stylesheet"  type='text/html'>
+    <link  rel="stylesheet" href="/assets/jquery.sidr.dark.min.css">
+     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %> 
+     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+     <%= csrf_meta_tags %>
+     <script>
+       $(document).ready(function() {
+         $('#simple-menu').sidr({
+          displace: false
+         });
+         $('.icon-close').click(function(){ // when 'icon-close' is clicked…
+        $.sidr('close', 'sidr');  // close the div with the ID of "sidr"
+          });
+      });
+     </script>
+ </head>
 <body>
 
+<div id="sidr"> 
+        <ul> 
+          <li><a href="/">Home</a></li> 
+          <li><a href="/about">About</a></li>
+          <li><a href="/signups/new">Contact</a></li> 
+        </ul> <img alt="Close" class="icon-close" src="/assets/close.png" width="24px"/> 
+</div> 
+
+
+
 <%= yield %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  
+
+
+  <div class="footer">
+     <div class="container"> 
+       <p>AKiiki Kasaija Project</p> 
+     </div> 
+   </div>
+
+
 </body>
 </html>

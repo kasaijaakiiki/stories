@@ -1,3 +1,106 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+	font-family: 'Lora', serif;
+	width: 100%;
+	min-height: 100%;
+	overflow-x:hidden;
+}
+
+/*
+Homepage
+ */
+
+.home-main {
+	z-index: 1;
+	background-image: asset-data-url('kasaijahavard2.jpg');
+	background-position: 0% 50%;
+	background-size: auto;
+	background-repeat: no-repeat, repeat;
+	height: 600px;
+	width: 100%;
+	padding-bottom: 20%;
+	top: 0%;
+
+}
+.container h1, .container h2 {
+	font-size: 50px;
+}
+
+.home-supporting  p {
+	font-size: 25px;
+	font-weight: lighter;
+}
+
+
+.content{
+   padding-top: 300px;
+}
+.container h1 {
+	color: #ffffff;
+}
+
+.home-supporting .container{
+	position: relative;
+	height: 30%;
+	width: 100%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	text-align: center;
+	position:relative;
+	top:40%;
+}
+
+.home-secondary {
+	z-index: 1;
+	background-image: asset-data-url('kasaijaunaa.jpg');
+	background-position: 10% 30%;
+	background-size: auto;
+	background-repeat: no-repeat, repeat;
+	height: 600px;
+	width: 100%;
+	padding-bottom: 20%;
+	top: 0%;
+}
+
+.home-about .container{
+	position: relative;
+	height: 30%;
+	width: 100%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	text-align: center;
+	position:relative;
+	top:40%;
+
+}
+
+.footer .container {
+	text-align: center;
+	background-color: #F9F9F9;
+	height: 50px;
+	width: 100%;
+	text-transform: uppercase;
+	padding-top: 3%;
+	padding-bottom: 4%;
+	color: #AEA9A9;
+}
+
+.btn-primary {
+	border-radius: 0%;
+	padding: 10px 30px;
+	font-size: 20px
+}
+#simple-menu img{
+	margin-top: 30px;
+	margin-left: 30px
+}
+
+#sidr li {
+	padding: 25px;
+	font-weight: lighter;
+    font-size: 20px;
+    font-family: 'Roboto'
+}
