@@ -8,7 +8,7 @@
      <link  href="https://fonts.google.com/?selection.family=Roboto:100,300,400" rel="stylesheet"  type='text/html'>
     <link  rel="stylesheet" href="/assets/jquery.sidr.dark.min.css">
      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %> 
-     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+     <%= javascript_include_tag 'application' %>
      <%= csrf_meta_tags %>
      <script>
        $(document).ready(function() {
@@ -22,7 +22,7 @@
      </script>
  </head>
 <body>
-
+  
 <div id="sidr"> 
         <ul> 
           <li><a href="/">Home</a></li> 
@@ -30,7 +30,6 @@
           <li><a href="/signups/new">Contact</a></li> 
         </ul> <img alt="Close" class="icon-close" src="/assets/close.png" width="24px"/> 
 </div> 
-
 
 
 <%= yield %>

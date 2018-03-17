@@ -1,0 +1,22 @@
+
+    <div class="signup-main">
+		<a id="simple-menu" href="#sidr"><img src="/assets/menu.png" width="30px" height="40px"></a>
+		<h1>Get the latest updates from Stories</h1>
+		<div class="signup">
+			
+			
+			<%= form_for(@signup) do |f| %>
+			<div class="signups  col-md-6 col-md-offset-4">
+				<%= f.label "First name", id: "firstname" %>
+				<br>
+    			<%= f.text_field :firstname, :id => 'data', required: true%><br>  
+    			<%= f.label "Email", id: "email" %>
+    			<br>
+    			<%= f.email_field :email, :id => 'data', required:true%>
+    			<br><br> 
+  				<%= f.submit "Join", { :class => "btn btn-secondary" } %> 
+			</div>
+			<% end %>
+		</div>
+	</div>
+
